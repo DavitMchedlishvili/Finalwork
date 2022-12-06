@@ -1,0 +1,316 @@
+.container{
+    border: 2px solid red;
+    max-width: 1440;
+    width: 100%;
+    
+   
+}
+
+
+header{
+    background-color: #F6F8F9;
+    max-width: inherit;
+    width: inherit;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    padding: 18px 20px 18px 20px;
+    
+    
+}
+
+.logo{
+    display: flex;
+    gap: 5px;
+    
+}
+
+
+.newslogo{
+    width: 20px;
+    height: 20px;
+    
+    
+    
+}
+
+
+.logotext{
+    
+    font-size: 1.2rem;
+    
+    
+}
+
+
+
+
+
+
+.w{
+    animation-name: logotextanimation;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.o{
+    animation-name: logotextanimation;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+.r{
+    animation-name: logotextanimation;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.l{
+    animation-name: logotextanimation;
+    animation-duration: 8s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+.d{
+    animation-name: logotextanimation;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logotextanimation{
+    0%{
+        color: blue;
+
+    }
+
+    10%{
+        color: purple;
+    } 
+
+    20%{
+        color: pink;
+    }
+
+    30%{
+        color: red;
+    }
+
+    40%{
+        color: orange;
+    }
+    
+    50% {
+        color: yellow;
+        
+    }
+    60%{
+        color: yellowgreen;
+    }
+    70%{
+        color: green;
+    }
+    80%{
+        color: aquamarine;
+    }
+    90% {
+        color: aqua;
+    }
+    100%{
+        color: blue;
+    }
+
+}
+
+
+
+.navigation{
+    font-size: 0.688rem;
+    display: flex;
+    gap: 30px;
+}
+
+.pages{
+    font-size: 0.688rem;
+    transition-duration: 2ms;
+    transition-timing-function: linear;
+}
+
+
+
+.pages:hover{
+
+    border-bottom: 5px solid pink;
+    
+}
+
+
+
+.active{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.section1{
+    margin: 56px auto 0px auto;
+    width: 100%;
+    display: flex;
+    border: 2px solid red;
+}
+
+
+.section1L{
+    width: 58%;
+    height: 599px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Image/section1.png") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.leftsectiontext{
+    width: 45%;
+    
+
+}
+
+
+
+.title1{
+    padding-bottom: 40px;
+    color: white;
+    border-bottom:2px solid white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+
+.article_1title{
+    margin-top: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.article_1{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+
+.button1{
+    margin-top: 30px;
+    width: 25%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #FA6980;
+    font-size: 0.688rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+.section1R{
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_1title2{
+    border-bottom:2px solid grey;
+    width: 50%;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.title2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.section1Rnews{
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.newstitle_2{
+    color: #FA6980;
+    font-size: 1rem;
+    margin-bottom: 20px;
+
+}
+
+.newstitle_3{
+    margin-top: 40px;
+    color: #FA6980;
+    font-size: 1rem;
+    margin-bottom: 20px;
+
+}
+
+
+
+.articletitle_2_3{
+font-size: 1rem;
+font-weight: bold;
+
+    
+}
+
+
+
+.articletext1{
+    color: #A6ADB4;
+    padding: 10px 0px;
+    font-size: 1rem;
+}
+
+.time{
+   font-size: 0.813rem; 
+   color: #A6ADB4;
+}
+
+
+.time::before{
+    content: "\f017";
+    font-family: "Font Awesome 6 free";
+    display: inline-block;
+    width: 10px;
+    margin-right: 10px;
+
+    
+}
+
+
