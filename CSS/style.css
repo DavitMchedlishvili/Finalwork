@@ -9,7 +9,7 @@
     width: 100%;
     margin: 0 auto;
     background-color: #F6F8F9;
-    
+    z-index: 0;
     
    
 }
@@ -147,10 +147,20 @@ header{
 
 /* Header - right side navigation / position / animation  */
 
+
+
+.headerleft{
+    
+    z-index: 99;
+}
+
+
+
 .navigation{
     font-size: 0.688rem;
     display: flex;
     gap: 30px;
+    
 }
 
 .pages{
@@ -170,10 +180,107 @@ header{
 
 
 
-.active{
+.onsite{
     color: black;
     font-weight: bold;
+
 }
+
+
+
+
+
+
+
+
+
+
+/* Burger Manu  */
+
+
+
+
+
+.challange{
+    display: none;
+}
+
+.burgermenu{
+   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    z-index: 102;
+   
+}
+
+.hamburger{
+    display: block;
+    position: relative;
+    z-index: 101;
+    width: 35%;
+    height: 35%;
+    cursor: pointer;
+
+    user-select: none;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: all .5s ease-in-out ;
+
+}
+
+
+
+.hamburger span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: black;
+    border-radius: 6px;
+    z-index: 100;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s;
+}
+
+
+.hamburger:hover span:nth-child(2){
+    transform: translateX(10px);
+    background-color: purple;
+}
+
+
+.hamburger.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+
+
+
+/* Burger Manu  */
+
+
+
+
+
 
 /* Header - finish  */
 
@@ -489,6 +596,7 @@ font-weight: bold;
 }
 
 .section3_articles{
+    /* border: 2px solid red;  */
     display: flex;
     gap: 40px;
 }
@@ -581,8 +689,7 @@ font-weight: bold;
 }
 
 .elephant{
-    height: 80%;
-    background: url("../Image/section3_elephant.png");
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -598,11 +705,10 @@ font-weight: bold;
 }
 
 .parrot{
-    height: 80%;
-    background: url("../Image/section3_parrot.png");
+    width: 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  
     border-radius: 5px;
 }
 
@@ -616,11 +722,10 @@ font-weight: bold;
 
 
 .road{
-    height: 80%;
-    background: url("../Image/section3_road.png");
+    width: 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     border-radius: 5px;
 }
 
@@ -674,25 +779,6 @@ footer{
     gap: 32px;
 
 }
-
-
-
-
-
-
-
-
-
-/* resolutions */
-
-
-
-
-
-
-
-
-
 
 /* Index page - finish */
 
@@ -879,7 +965,7 @@ header{
 
 
 
-.active{
+.onsite{
     color: black;
     font-weight: bold;
 }
@@ -984,6 +1070,7 @@ form{
     border-bottom: 3px solid #EBEDED;
     border-top: 3px solid #EBEDED ;
     width: 80%;
+    
     margin: auto;
     display: flex;
     gap: 5px;
@@ -993,7 +1080,7 @@ form{
 
 .avatar_title{
     /* border: 2px solid red; */
-    width: 33%;
+    width: 30%;
     margin: 40px 40px 92px 0px;
 }
 
@@ -1004,9 +1091,19 @@ form{
     font-weight: bold;
 }
 
-.atarar_text1{
+.avatar_text_div{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+
+
+
+}
+
+
+.avarar_text1{
     /* border: 2px solid red; */
-    width: 33%;
+    width: 50%;
     padding-top: 40px;
     font-size: 0.875rem;
     font-family: 'Abel', sans-serif;
@@ -1019,7 +1116,6 @@ form{
     /* border: 2px solid red; */
     margin: 40px auto;
     width: 80%;
-    background-color: white;
     display: flex;
     flex-direction: column;
 
@@ -1059,3 +1155,436 @@ form{
 
 
 /* html - done ... */
+
+
+
+
+
+/* TABLET RESOLUTIONS */
+
+
+
+
+
+
+@media screen and (max-width: 780px){
+
+
+
+    /* INDEX - resolutions */
+
+    /* Section  1 */
+    .section1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section1L{
+        width: 100%;
+    }
+
+    .section1R{
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .right_1title2{
+        width: 80%;
+    }
+
+    .title2{
+        width: 80%;
+        justify-content: start;
+    }
+
+
+    
+
+    .section1Rnews{
+        
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+
+    }
+
+
+    .article_3{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+
+    .newstitle_3{
+        margin-top: 0px;
+    }
+
+
+    /* Section 2  */
+
+
+    .section2{
+
+        width: 80%;
+
+    }
+
+
+    .section2_articles{
+        width: 100%;
+        display: flex;
+        gap: 40px;
+        
+    }
+
+    .section2_figure{
+        width: 50%;
+    }
+
+
+    .section2_3rdfigure{
+        display: none;
+    }
+
+
+    .section3_articles{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /* Section 3  */
+
+
+    .section3_left{
+        width: 100%;
+
+    }
+
+    .section3_right{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 40px;
+
+
+    }
+
+
+
+    
+
+    .top{
+        
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+       
+    }
+
+
+ 
+
+
+    .mid{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+    }
+
+
+    .bottom{
+        display: none;
+    }
+
+
+    /* footer  */
+
+
+
+    footer{
+       padding-left: 85px;
+    }
+   
+
+
+
+
+
+    /* WN Page  */
+
+
+
+
+
+
+    .WN_section1{
+
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+
+    .WN_section1_left{
+        width: 100%;
+        
+    }
+
+    .WN_section1_right{
+        width: 100%;
+       
+        
+        
+    }
+
+
+    form{
+        width: 80%;
+        margin: 87px auto;
+        
+    }
+
+
+    .WN_section2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+   
+    }
+
+
+    .avatar_title{
+        width: 100%;
+        height: 30%;
+        margin: 0px 0px 40px 0px;
+    }
+
+    .WN_section2_title{
+        width: 50%;
+        
+    }
+
+    .avatar_text_div{
+        display: flex;
+        width: 100%;
+        height: 70%;
+        justify-content: space-evenly;
+
+    }
+
+    .avarar_text1{
+        width: 100%;
+        padding: 0px 0px 40px 0px;
+
+    }
+
+
+    .WN_section3{
+        padding-bottom: 127px;
+        border-bottom: 2px solid #EBEDED;
+        margin-bottom: 143px;
+    }
+
+
+
+
+
+
+}
+ 
+
+
+
+
+
+/* Mobile Resolution  */
+
+
+
+@media screen and (max-width: 365px){
+
+
+/* INDEX PAGE  */
+
+
+
+/* BURGER MANU  */
+
+.challange{
+    display: block;
+    
+    
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+
+}
+
+.pages{
+    font-size: 1.2rem;
+}
+
+.headerleft{
+    background-color: #FA6980;
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transition: 0.5s;
+    z-index: 30;
+    
+
+}
+
+.headerleft.is-active{
+    transform: translateX(-100%);
+}
+
+
+
+
+.burgermenu{
+    display: inline-block;
+}
+
+.hamburger:hover span:nth-child(2){
+    transform: translateX(0px);
+    background-color: purple;
+}
+
+/* BURGER MANU  */
+
+
+
+.leftsectiontext{
+    width: 90%;
+}
+
+
+.section1Rnews{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+.section2_articles{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.section2_figure{
+    width: 100%;
+}
+
+
+
+
+.section3_left{
+    padding-bottom: 40px;
+    border-bottom:2px solid #EBEDED;
+}
+
+.section3_right{
+    
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.top{
+    width: 100%;
+
+}
+
+
+.mid{
+    width: 100%;
+
+}
+
+
+.bottom{
+    display: inline;
+    width: 100%;
+
+
+}
+
+
+
+.footer_info{
+    display: none;
+}
+
+
+
+.social_links{
+    
+    margin-left: 20px;
+
+}
+
+
+
+
+
+/* WN PAGE  */
+
+
+
+.WN_section1{
+    width: 100%;
+}
+
+
+
+
+
+.WN_section2_title{
+    margin-top: 40px;
+    width: 80%;
+}
+
+.avatar_text_div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.bigelephant{
+    height: 180px;
+}
+
+
+
+}
+
+
+
+
+
+
